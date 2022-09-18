@@ -3,13 +3,12 @@ const bcrypt = require('bcrypt');
 const sequelize = require('../config/connection');
 
 //create user model
-
 class User extends Model {
     //method to run on instance data per user to check password
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
-}
+};
 
 User.init(
     {
@@ -58,6 +57,6 @@ User.init(
         underscored: true,
         modelName: 'user'
     }
-)
+);
 
 module.exports = User;
