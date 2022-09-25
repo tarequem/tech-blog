@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   background-color: #9caea9;
+  color: white;
 }
 
 body, html {
@@ -8,7 +9,7 @@ body, html {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
-  color: #333;
+  color: white;
 }
 
 a {
@@ -134,6 +135,10 @@ main {
   background-color: #9caea9;
 }
 
+.card-text {
+  color: white;
+}
+
 .span {
   color: black;
 }
@@ -165,6 +170,7 @@ main {
 
 .comment-form {
   margin-bottom: 5%;
+  color: white;
 }
 
 .comment {
